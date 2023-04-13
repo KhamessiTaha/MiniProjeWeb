@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background-image: url('https://getwallpapers.com/wallpaper/full/7/8/d/370135.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+font-family: 'Numans', sans-serif;
+}
+.container{
+    height: 100%;
+    align-content: center;
+    }
+.form{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+}
