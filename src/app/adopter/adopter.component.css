@@ -14,10 +14,10 @@ align-content: center;
 }
 
 .card{
-height: 1300px;
+height: 1000px;
 margin-top: auto;
 margin-bottom: auto;
-width: 800px;
+width: 600px;
 background-color: rgba(0,0,0,0.5) !important;
 }
 

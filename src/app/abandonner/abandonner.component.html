@@ -26,43 +26,104 @@
 			<div class="card-body">
 				<form>
                     
-					<div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-phone"></i></span>
-						</div>
-						<input type="text" class="form-control" placeholder="phone number">
+					<div class="container">
+						<br><br><br>
+						<div class="row col-md-10">
 						
-					</div>
-                    
-					<div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						<h3 style="color:  hwb(49 1% 3%);">Register:</h3><br><br>
+						<form class="col-md-8">
+							<div class="form-check form-check-inline ">
+								<input type="radio" name="pet" class="form-check-input" id="r1" value="Cat">
+								<label class="form-check-label" for="r1" style="color: aliceblue;">Cat</label>
+								<input type="radio" name="pet" class="form-check-input" id="r2" value="Dog">
+								<label class="form-check-label" for="r1" style="color: aliceblue;">Dog</label>
+							</div>
+						</form>
 						</div>
-						<input type="text" class="form-control" placeholder="username">
-					</div>
-					<div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-at"></i></span>
-						</div>
-						<input type="text" class="form-control" placeholder="email">
+						<br><br>
+						<div class="col-md-10">
+							<form class="form-floating">
+							<input type="text" class="form-control" id="nom1" placeholder="Pet Nom" required>
+							<label for="nom1"> Your Pet's Name </label>
+							<div class="valid-feedback">valide</div>
+							<div class="invalid-feedback">unvalide</div>
+							 </form> </div>
+						<br><br>
+						<div class="row col-md-10">
+					
+							<h3 style="color:  hwb(49 1% 3%);">Gender:</h3><br><br>
+							<form class="col-md-8">
+								<div class="form-check form-check-inline ">
+									<input type="radio" name="sexe" class="form-check-input" id="female" value="Female">
+									<label class="form-check-label" for="female" style="color: aliceblue;">Female</label>
 						
-					</div>
-                    <div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-key"></i></span>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" name="sexe" class="form-check-input" id="male" value="Male">
+									<label class="form-check-label" for="male" style="color: aliceblue;">Male</label>
+								</div>
+							</form>
 						</div>
-						<input type="text" class="form-control" placeholder="password">
-						
+						<br><br>
+				
+					<form class="col-md-10" >
+						<select class="form-select form-control-sm " placeholder="Breed" id="sel1">
+							<option style="color: hwb(49 1% 3%);">Pet Breed</option>
+							<option style="color: hwb(49 1% 3%);">Labrador Retriever</option>
+							<option style="color: hwb(49 1% 3%);" >Bulldog Anglais</option>
+							<option style="color: hwb(49 1% 3%);">Berger Allemand</option>
+							<option style="color: hwb(49 1% 3%);">La race de votre chat</option>
+							<option style="color: hwb(49 1% 3%);">Siamois</option>
+							<option style="color: hwb(49 1% 3%);" >Persan</option>
+							<option style="color: hwb(49 1% 3%);" >Bengal </option>
+							<option style="color: hwb(49 1% 3%);">Autre</option>
+						</select>
+					</form>
+					<br><br>
+				<form class="col-md-10">
+					<h3 style="color:  hwb(49 1% 3%);">Age:</h3><br>
+					<select class="form-select form-control-sm" id="sel2">
+						<option style="color: hwb(49 1% 3%);">0--3</option>
+						<option style="color: hwb(49 1% 3%);" >4--7</option>
+						<option style="color: hwb(49 1% 3%);" >8--11</option>
+						<option style="color: hwb(49 1% 3%);" >12--14</option>
+						<option style="color: hwb(49 1% 3%);" >15--18</option>
+						<option style="color: hwb(49 1% 3%);" >19--22</option>
+						<option style="color: hwb(49 1% 3%);" >23--26</option>
+					</select>
+				
+				</form>
+				<br><br>
+				<div class="row">
+				<div class="col-5">
+					<form class="form-floating">
+						<input type="text" class="form-control" id="nom1" placeholder="Color" required>
+						<label for="nom1"> Describe your pets color</label>
+						<div class="valid-feedback">valide</div>
+						<div class="invalid-feedback">unvalide</div>
+						 </form>
+				</div>
+					<div class="col-5">
+						<form class="form-floating">
+							<input type="text" class="form-control" id="nom1" placeholder="Weight" required>
+							<label for="nom1"> Your pets weight </label>
+							<div class="valid-feedback">valide</div>
+							<div class="invalid-feedback">unvalide</div>
+							 </form>
 					</div>
-                    <div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-key"></i></span>
-						</div>
-						<input type="text" class="form-control" placeholder="confirm your password">
-						
-					</div>
+				</div>
+				 <br><br>
+				 <div class="col-md-10">
+				   
+					<h5 style="color:hwb(49 1% 3%) ;">About your pet:</h5>
+					<br>
+					<input type="text" class="form-control" id="nom2" placeholder="Describe your Pet here (If needed)" >
+				   
+				</div>
+					 <br><br><br>
+				</div>
 					<div class="form-group">
-						<input type="submit" value="Sign Up" class="btn float-right login_btn">
+						<input type="submit" value="Register" class="btn float-right login_btn">
 					</div>
 				</form>
 			</div>

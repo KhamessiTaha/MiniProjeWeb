@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<title>Sign Up Page</title>
+	<title>Adopt Page</title>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
    <!--Made with love by Mutiullah Samim -->
    
@@ -12,54 +12,54 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 	<!--Custom styles-->
-	<link rel="stylesheet" type="text/css" href="/src/app/inscrire/inscrire.component.css">
+	<link rel="stylesheet" type="text/css" href="/src/app/adopter/adopter.component.css">
 </head>
 <body>
 <div class="container">
 	<div class="d-flex justify-content-center h-100">
 		<div class="card">
 			<div class="card-header">
-				<h3>Sign Up</h3>
+				<h3>Adopt</h3>
 				
 			</div>
 			<div class="card-body">
 				<form>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-phone"></i></span>
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" [(ngModel)]="signupObj.phoneNumber" placeholder="phone number" >
+						<input type="text" class="form-control" placeholder="First Name" >
 						
 					</div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" [(ngModel)]="signupObj.userName" placeholder="username">
+						<input type="text" class="form-control" placeholder="Last Name">
 					</div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<input type="text" class="form-control" placeholder="ID">
+						
+					</div>
+                    <div class="input-group form-group">
+						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-at"></i></span>
 						</div>
-						<input type="text" [(ngModel)]="signupObj.email" placeholder="email">
+						<input type="text" class="form-control" placeholder="Adress">
 						
 					</div>
                     <div class="input-group form-group">
 						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-key"></i></span>
+							<span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
 						</div>
-						<input type="text" [(ngModel)]="signupObj.password" placeholder="password">
-						
-					</div>
-                    <div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-key"></i></span>
-						</div>
-						<input type="text" [(ngModel)]="signupObj.password" placeholder="confirm your password">
+						<input type="date" class="form-control" placeholder="Date">
 						
 					</div>
 					<div class="form-group">
-						<input type="submit" value="Sign Up" class="btn float-right login_btn">
+						<input type="submit" value="Adopt" class="btn float-right login_btn">
 					</div>
 				</form>
 			</div>
