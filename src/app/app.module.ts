@@ -12,6 +12,8 @@ import { InscrireComponent } from './inscrire/inscrire.component';
 import { AbandonnerComponent } from './abandonner/abandonner.component';
 import { AdopterComponent } from './adopter/adopter.component';
 import { AddminComponent } from './addmin/addmin.component';
+import { HeaderComponent } from './header/header.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -23,12 +25,27 @@ import { AddminComponent } from './addmin/addmin.component';
     InscrireComponent,
     AbandonnerComponent,
     AdopterComponent,
-    AddminComponent
+    AddminComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot([
+  {path: '**', redirectTo: 'welcome',pathMatch:'full'},
+  {path: '', redirectTo: 'welcome',pathMatch:'full'},
+  {path: 'login', component: LoginComponent},
+  {path: 'inscrire',component: InscrireComponent},
+  {path: 'cats',component: CatsComponent},
+  {path: 'dogs',component: DogsComponent},
+  {path: 'adopter',component: AdopterComponent},
+  {path: 'abandonner',component: AbandonnerComponent},
+  {path: 'welcome', component: WelcomeComponent},
+  {path: 'admin', component: AddminComponent}
+ 
+    ])
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

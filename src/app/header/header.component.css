@@ -2,12 +2,9 @@
 
 html,body{
 background-image: url('https://getwallpapers.com/wallpaper/full/b/6/e/294800.jpg');
-background-size: cover ;
+background-size: cover;
 background-repeat: no-repeat;
-height: 100%;
-width: 100%;
-height: 100%;
-position: absolute;
+height: 140%;
 font-family: 'Numans', sans-serif;
 }
 
@@ -17,10 +14,10 @@ align-content: center;
 }
 
 .card{
-height: 470px;
+height: 1300px;
 margin-top: auto;
 margin-bottom: auto;
-width: 400px;
+width: 800px;
 background-color: rgba(0,0,0,0.5) !important;
 }
 

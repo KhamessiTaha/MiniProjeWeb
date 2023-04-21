@@ -1,179 +1,158 @@
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-	<title>Pet Registration</title>
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-   <!--Made with love by Mutiullah Samim -->
-   
-	<!--Bootsrap 4 CDN-->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
-    <!--Fontawesome CDN-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <link rel="stylesheet" href="/src/styles.css">
+    <title>Abandon </title>
+    <style>
+          .bg {
+background-image: url('/src/app/who-we-are/catnddog.jpg');
+background-position: center center;
+width: 100%;
+height: 150%;
+          }
+          .glass {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.bg1{
+    background-color:rgba(221, 212, 212, 0.973);
+}
 
-	<!--Custom styles-->
-	<link rel="stylesheet" type="text/css" href="/src/app/abandonner/abandonner.component.css">
+    </style>
 </head>
 <body>
-<div class="container">
-	<div class="d-flex justify-content-center h-100">
-		<div class="card">
-			<div class="card-header">
-				<h3>Pet Registration</h3>
-				
-			</div>
-			<div class="card-body">
-				<form>
-                    
-					<div class="container">
-						<br><br><br>
-						<div class="row col-md-10">
-						
-						<h3 style="color:  hwb(49 1% 3%);">Register:</h3><br><br>
-						<form class="col-md-8">
-							<div class="form-check form-check-inline ">
-								<input type="radio" name="pet" class="form-check-input" id="r1" value="Cat">
-								<label class="form-check-label" for="r1" style="color: aliceblue;">Cat</label>
-								<input type="radio" name="pet" class="form-check-input" id="r2" value="Dog">
-								<label class="form-check-label" for="r1" style="color: aliceblue;">Dog</label>
-							</div>
-						</form>
-						</div>
-						<br><br>
-						<div class="col-md-10">
-							<form class="form-floating">
-							<input type="text" class="form-control" id="nom1" placeholder="Pet Nom" required>
-							<label for="nom1"> Your Pet's Name </label>
-							<div class="valid-feedback">valide</div>
-							<div class="invalid-feedback">unvalide</div>
-							 </form> </div>
-						<br><br>
-						<div class="row col-md-10">
-					
-							<h3 style="color:  hwb(49 1% 3%);">Gender:</h3><br><br>
-							<form class="col-md-8">
-								<div class="form-check form-check-inline ">
-									<input type="radio" name="sexe" class="form-check-input" id="female" value="Female">
-									<label class="form-check-label" for="female" style="color: aliceblue;">Female</label>
-						
-								</div>
-								<div class="form-check form-check-inline">
-									<input type="radio" name="sexe" class="form-check-input" id="male" value="Male">
-									<label class="form-check-label" for="male" style="color: aliceblue;">Male</label>
-								</div>
-							</form>
-						</div>
-						<br><br>
-				
-					<form class="col-md-10" >
-						<select class="form-select form-control-sm " placeholder="Breed" id="sel1">
-							<option style="color: hwb(49 1% 3%);">Pet Breed</option>
-							<option style="color: hwb(49 1% 3%);">Labrador Retriever</option>
-							<option style="color: hwb(49 1% 3%);" >Bulldog Anglais</option>
-							<option style="color: hwb(49 1% 3%);">Berger Allemand</option>
-							<option style="color: hwb(49 1% 3%);">La race de votre chat</option>
-							<option style="color: hwb(49 1% 3%);">Siamois</option>
-							<option style="color: hwb(49 1% 3%);" >Persan</option>
-							<option style="color: hwb(49 1% 3%);" >Bengal </option>
-							<option style="color: hwb(49 1% 3%);">Autre</option>
-						</select>
-					</form>
-					<br><br>
-				<form class="col-md-10">
-					<h3 style="color:  hwb(49 1% 3%);">Age:</h3><br>
-					<select class="form-select form-control-sm" id="sel2">
-						<option style="color: hwb(49 1% 3%);">0--3</option>
-						<option style="color: hwb(49 1% 3%);" >4--7</option>
-						<option style="color: hwb(49 1% 3%);" >8--11</option>
-						<option style="color: hwb(49 1% 3%);" >12--14</option>
-						<option style="color: hwb(49 1% 3%);" >15--18</option>
-						<option style="color: hwb(49 1% 3%);" >19--22</option>
-						<option style="color: hwb(49 1% 3%);" >23--26</option>
-					</select>
-				
-				</form>
-				<br><br>
-				<div class="row">
-				<div class="col-5">
-					<form class="form-floating">
-						<input type="text" class="form-control" id="nom1" placeholder="Color" required>
-						<label for="nom1"> Describe your pets color</label>
-						<div class="valid-feedback">valide</div>
-						<div class="invalid-feedback">unvalide</div>
-						 </form>
-				</div>
-					<div class="col-5">
-						<form class="form-floating">
-							<input type="text" class="form-control" id="nom1" placeholder="Weight" required>
-							<label for="nom1"> Your pets weight </label>
-							<div class="valid-feedback">valide</div>
-							<div class="invalid-feedback">unvalide</div>
-							 </form>
-					</div>
-				</div>
-				 <br><br>
-				 <div class="col-md-10">
-				   
-					<h5 style="color:hwb(49 1% 3%) ;">About your pet:</h5>
-					<br>
-					<input type="text" class="form-control" id="nom2" placeholder="Describe your Pet here (If needed)" >
-				   
-				</div>
-					 <br><br><br>
-				</div>
-					<div class="form-group">
-						<input type="submit" value="Register" class="btn float-right login_btn">
-					</div>
-				</form>
-			</div>
-			<div class="card-footer">
-				<div class="d-flex justify-content-center">
-					<a href="#">Contact Us</a>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="bg">
+        <br><br><br>
+    <div class="container">
+        <div class="card text-body glass" style="width: 50%; height: 90%; left: 30%;border: 1px solid;" >
+            <div class="card-body">
+        
+        <br>
+        <div class="row col-md-10">
+        
+        <h1 style="color:  #FFD8A9;">Abandon:</h1>
+        <br><br> <br> <br>
+        <form class="col-md-8">
+            <div class="form-check form-check-inline  ">
+                <input type="radio" name="n1" class="form-check-input" id="r1" value="Cat">
+                <label class="form-check-label" for="r1" style="color: #FFD8A9">Cat</label>
+
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" name="n1" class="form-check-input" id="r2" value="Dog">
+                <label class="form-check-label" for="r1" style="color: #FFD8A9">Dog</label>
+    
+            </div>
+        </form>
+        </div>
+        <br><br>
+        <div class="col-md-10">
+            <form class="form-floating">
+            <input type="text" class="form-control bg1" id="nom1" placeholder="Pet Nom" required>
+            <label for="nom1" style="color:#E38B29;">Your pet's name</label>
+            <div class="valid-feedback">valide</div>
+            <div class="invalid-feedback">unvalide</div>
+             </form> </div>
+        <br><br>
+        <div class="row col-md-10">
+    
+            <h3 style="color:  #E38B29;">Gender:</h3><br><br>
+            <form class="col-md-8">
+                <div class="form-check form-check-inline ">
+                    <input type="radio" name="n2" class="form-check-input" id="female" value="female">
+                    <label class="form-check-label" for="female" style="color: #FFD8A9;">Female</label>
+        
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="n2" class="form-check-input" id="male" value="Dog">
+                    <label class="form-check-label" for="male" style="color: #FFD8A9;">Male</label>
+                </div>
+            </form>
+        </div>
+        <br><br>
+
+    <form class="col-md-10" >
+        <select class="form-select form-control-sm bg1 " placeholder="race" id="sel1">
+            <option style="color: #E38B29;">Your dog's breed</option>
+            <option style="color: #E38B29;">Labrador Retriever</option>
+            <option style="color: #E38B29;" >Bulldog Anglais</option>
+            <option style="color: #E38B29;">Berger Allemand</option>
+            <option style="color: #E38B29;">Autre</option>
+        </select>
+    </form>
+
+ <br>
+
+ <form class="col-md-10">
+    <select class="form-select form-control-sm bg1" id="sel2">
+        <option style="color: #E38B29;">Your cat's breed</option>
+        <option style="color: #E38B29;">Siamois</option>
+        <option style="color: #E38B29;" >Persan</option>
+        <option style="color:#E38B29;" >Bengal </option>
+        <option style="color: #E38B29;">Autre</option>
+    </select>
+</form>
+<br><br>
+<form class="col-md-10">
+    <h3 style="color: #E38B29;">Age:</h3><br>
+    <select class="form-select form-control-sm bg1" id="sel2">
+        <option style="color: #E38B29;">0--3</option>
+        <option style="color: #E38B29;" >4--7</option>
+        <option style="color: #E38B29;" >8--11</option>
+        <option style="color: #E38B29;" >12--14</option>
+        <option style="color:#E38B29;" >15--18</option>
+        <option style="color: #E38B29;" >19--22</option>
+        <option style="color: #E38B29;" >23--26</option>
+    </select>
+
+</form>
+<br><br>
+<div class="row">
+<div class="col-5">
+    <form class="form-floating">
+        <input type="text" class="form-control bg1" id="nom1" placeholder="Pet Nom" required>
+        <label for="nom1" style="color:#E38B29;"> Weight </label>
+        <div class="valid-feedback">valide</div>
+        <div class="invalid-feedback">unvalide</div>
+         </form>
 </div>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
+    <div class="col-5">
+        <form class="form-floating">
+            <input type="text" class="form-control bg1" id="nom1" placeholder="Pet Nom" required>
+            <label for="nom1" style="color:#E38B29;"> Color </label>
+            <div class="valid-feedback">valide</div>
+            <div class="invalid-feedback">unvalide</div>
+             </form>
+    </div>
+</div>
+ <br><br>
+ <div class="col-md-10">
+   
+    <h5 style="color:#E38B29 ;">About your pet :</h5>
+    <br>
+    <input type="text" class="form-control bg1" id="nom2" placeholder="Write a small description about your pet " required>
+   
+</div>
+     <br><br><br>
+
+     <div class="container d-grid col-8">
+        <button type="button" class="btn btn-outline-light me-2" style="color: #FFD8A9;">Register</button>
+    </div>
+
+</div>
+</div>
+<br><br><br><br><br>
+    </div>
+    </div>
 </body>
 </html>
+

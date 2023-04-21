@@ -7,7 +7,6 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
     <title>Welcome to PetMatch</title>
-    <link rel="stylesheet" href="/src/app/welcome/welcome.component.css">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
@@ -22,6 +21,7 @@
 <link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
 <link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
 <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+<link href="/src/app/welcome/welcome.component.css" rel="stylesheet">
 <meta name="theme-color" content="#7952b3">
 <style>
     .btn1 {
@@ -34,7 +34,7 @@
   padding: 20px;
 }
 .bg {
-  background-image: url('/src/app/who-we-are/catnddog.jpg');
+  background-image: url('https://getwallpapers.com/wallpaper/full/0/2/8/756431-cats-and-dogs-wallpaper-2560x1440-for-4k.jpg');
   background-position: center center;
   width: 100%;
   height: 150%;
@@ -42,6 +42,9 @@
 }
 .height1 {
     size: 200%;
+}
+.bg1{
+    background-color:rgba(221, 212, 212, 0.973);
 }
       </style>
     
@@ -51,27 +54,7 @@
     <div class="bg">
     <div class="container-fluid">
        
-  <div class="container">
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-      <div class="col-md-3 mb-2 mb-md-0">
-        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-          <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-        </a>
-      </div>
-
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 link-secondary"(click)="onHome()">Home</a></li>
-        <li><a href="#" class="nav-link px-2" style="color:#FFD8A9;" (click)="onAdopter()">Adopt</a></li>
-        <li><a href="#" class="nav-link px-2" style="color: #FFD8A9;"(click)="onAbandonner()">Abondonate</a></li>
-      
-      </ul>
-
-      <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-link" style="color: #FFD8A9;" (click)="onLogin()">Login</button>
-        <button type="button" class="btn btn-link" style="color: #E38B29;" (click)="onSignup()">Sign-up</button>
-      </div>
-    </header>
-  </div>
+  
 <main>
  <div class="row">
   <section class="py-5 text-center container">
@@ -81,8 +64,8 @@
         <p class="lead text-muted bg-transparent ">"PetMatch is where we are committed to helping pets in need find their forever homes. Our goal is to connect you with the perfect companion who will bring joy, love, and companionship into your life. By adopting a pet, you not only gain a new family member, but you also give a second chance to an animal in need. Thank you for considering adoption and for joining us in our mission to make a difference in the lives of these wonderful creatures."</p>
         <br><br><br><br>
         <p>
-          <a href="/src/app/cats/cats.component.html" class="btn1 btn-light me-2" style="color: #E38B29;">Cats</a>
-          <a href="/src/app/dogs/dogs.component.html" class="btn1 btn-light me-2" style="color: #E38B29;">Dogs</a>
+          <a href="#" class="btn btn-outline-dark me-5 btn-lg" style="color: #E38B29;">Cats</a>
+          <a href="#" class="btn btn-outline-dark me-5 btn-lg" style="color: #E38B29;">Dogs</a>
         </p>
       </div>
     </div>
@@ -96,7 +79,7 @@
           <div class="card shadow-sm">
             <svg class="bd-placeholder-img card-img-top " width="100%" height="225" xmlns="http://www.w3.org/2000/svg"role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%"/><text x="50%" y="50%" fill="#FFD8A9" dy=".3em"></text>  <image href="/src/app/cats/Abyssin.jpg" width="100%" height1="" /></svg>
 
-            <div class="card-body">
+            <div class="card-body bg1">
               <h4 class="card-title" style="color: #E38B29;">Cooper - Beagle Mix</h4>
               <p class="card-text">Cooper - Beagle Mix: Cooper is an energetic and curious dog with a friendly personality that is perfect for active families. With his tricolor coat and expressive eyes, it's hard to resist his charm. Cooper is also known to be very sociable with other dogs and children, making him an excellent choice for families with pets and kids.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -111,7 +94,7 @@
           <div class="card shadow-sm">
             <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>   <image href="/src/app/cats/Persan.jpg" width="100%" height1="" /></svg>
 
-            <div class="card-body">
+            <div class="card-body bg1">
               <h4 class="card-title" style="color: #E38B29;">Luna - Pit Bull Mix</h4>
               <p class="card-text">Luna - Pit Bull Mix: With her brown and black coat and gentle eyes, Luna is an adorable and loving dog that is perfect for people looking for a loyal and protective companion. Luna is an excellent guardian and will always be there to protect her family. She is also very calm and patient, making her an excellent choice for people looking for a sweet and affectionate dog.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -125,9 +108,9 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>  <image href="/src/app/dogs/Jack Russell Terrier.jpg" width="100%" height1="" /></svg>
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>  <image href="/src/assets/img/Berger Australien.jpg" width="100%" height1="" /></svg>
 
-            <div class="card-body">
+            <div class="card-body bg1">
               <h4 class="card-title" style="color: #E38B29;">Whiskers - Tabby</h4>
               <p class="card-text">Whiskers - Tabby: Whiskers is a spunky and energetic tabby with a playful personality. She loves to chase toys and climb on things, and is always looking for new adventures. Whiskers is also very affectionate and enjoys cuddling with her humans.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -142,9 +125,9 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>  <image href="/src/app/dogs/Berger Australien.jpg" width="100%" height="195%" /></svg>
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>  <image href="/src/assets/img/Berger Australien.jpg" width="100%" height="195%" /></svg>
 
-            <div class="card-body">
+            <div class="card-body bg1">
               <h4 class="card-title" style="color: #E38B29;">Midnight - Bombay</h4>
               <p class="card-text">Midnight - Bombay: Midnight is a sleek and elegant Bombay cat with a quiet and reserved personality. She prefers a calm and peaceful environment and would be best suited for a household without small children or other pets. Midnight is also very independent and enjoys spending time alone.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -158,9 +141,9 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>  <image href="/src/app/cats/Siamois.jpg" width="100%" height1="" /></svg>
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>  <image href="/src/assets/img/Berger Australien.jpg" width="100%" height1="" /></svg>
 
-            <div class="card-body">
+            <div class="card-body bg1">
               <h4 class="card-title" style="color: #E38B29;">Shadow - Russian Blue</h4>
               <p class="card-text">Shadow - Russian Blue: Shadow is a beautiful Russian Blue with striking green eyes and a curious personality. She loves to explore her surroundings and is always on the lookout for new sights and sounds. Shadow is also very intelligent and enjoys learning new things.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -176,7 +159,7 @@
           <div class="card shadow-sm">
             <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>  <image href="/src/app/dogs/Shih Tzu.jpg" width="100%" height1="" /></svg>
 
-            <div class="card-body">
+            <div class="card-body bg1">
               <h4 class="card-title" style="color: #E38B29;">Max - Golden Retriever</h4>
               <p class="card-text">Max - Golden Retriever: With his shiny golden coat and happy smile, Max is a playful and happy dog that is perfect for active families. Max is known to be very intelligent and easy to train, making him an excellent choice for people looking for an obedient dog. He is also very patient and gentle with children, making him a perfect choice for families with young kids.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -193,7 +176,7 @@
           <div class="card shadow-sm">
             <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>  <image href="/src/app/dogs/Jack Russell Terrier.jpg" width="100%" height1="" /></svg>
 
-            <div class="card-body">
+            <div class="card-body bg1">
               <h4 class="card-title" style="color: #E38B29;">Bella - Chihuahua</h4>
               <p class="card-text">Bella - Chihuahua: Bella is an adorable and affectionate companion dog with a brown coat and a sweet face. Bella is perfect for people looking for a small and easy-to-maintain dog. She is also very sweet and patient, making her an excellent choice for people looking for a loving and caring dog.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -209,7 +192,7 @@
           <div class="card shadow-sm">
             <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>  <image href="/src/app/cats/Maine Coon.jpg" width="100%" height1="" /></svg>
 
-            <div class="card-body">
+            <div class="card-body bg1">
               <h4 class="card-title" style="color: #E38B29;">Mittens - Scottish Fold</h4>
               <p class="card-text">Mittens - Scottish Fold: Mittens is an adorable Scottish Fold with folded ears and a sweet temperament. She loves to be cuddled and held and enjoys spending time with her humans. Mittens is also very friendly and would make a great companion for children or other pets.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -225,7 +208,7 @@
           <div class="card shadow-sm">
             <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>  <image href="/src/app/cats/Bengal.jpg" width="100%" height1="" /></svg>
 
-            <div class="card-body">
+            <div class="card-body bg1">
               <h4 class="card-title"style="color:#E38B29;">Zeus - Rottweiler</h4>
               <p class="card-text">Zeus - Rottweiler : Intelligent, protecteur et loyal, le Rottweiler est un excellent choix pour les propriétaires de chiens expérimentés qui cherchent un chien de garde fiable.</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -260,4 +243,3 @@
 </div>
   </body>
 </html>
-

@@ -1,12 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-welcome',
-  templateUrl: './welcome.component.html',
-  styleUrls: ['./welcome.component.css']
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css']
 })
-export class WelcomeComponent implements OnInit {
+export class HeaderComponent {
   constructor(private router: Router){}
   ngOnInit(): void {}
   onLogin(){
@@ -34,6 +34,6 @@ export class WelcomeComponent implements OnInit {
     this.router.navigate(['/dogs']);
 
   }
-  
-  
+
 }
+

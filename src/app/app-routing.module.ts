@@ -10,6 +10,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { AddminComponent } from './addmin/addmin.component';
 
 const routes: Routes = [
+ 
   {path: 'login', component: LoginComponent},
   {path: 'inscrire',component: InscrireComponent},
   {path: 'cats',component: CatsComponent},
