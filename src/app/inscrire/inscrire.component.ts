@@ -12,7 +12,8 @@ export class InscrireComponent implements OnInit{
     phoneNumber:'',
     userName:'',
     email:'',
-    password:''
+    password:'',
+    verifPassword:''
 
   };
 
@@ -21,7 +22,9 @@ ngOnInit(): void {
   
 }
 onSignup(){
-  this.signupUsers.push(this.signupObj)
-  localStorage.setItem('signupUsers',JSON.stringify(this.signupUsers))
+  this.signupUsers.push(this.signupObj);
+  localStorage.setItem('signUpUsers',JSON.stringify(this.signupUsers));
+  
 }
+
 }

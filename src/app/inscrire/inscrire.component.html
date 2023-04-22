@@ -28,38 +28,38 @@
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-phone"></i></span>
 						</div>
-						<input type="text" [(ngModel)]="signupObj.phoneNumber" placeholder="phone number" >
+						<input type="text" class="form-control" [(ngModel)]="signupObj.phoneNumber" placeholder="phone number" >
 						
 					</div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" [(ngModel)]="signupObj.userName" placeholder="username">
+						<input type="text" class="form-control" [(ngModel)]="signupObj.userName" placeholder="username">
 					</div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-at"></i></span>
 						</div>
-						<input type="text" [(ngModel)]="signupObj.email" placeholder="email">
+						<input type="text" class="form-control" [(ngModel)]="signupObj.email" placeholder="email">
 						
 					</div>
                     <div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input type="text" [(ngModel)]="signupObj.password" placeholder="password">
+						<input type="text" class="form-control" [(ngModel)]="signupObj.password" placeholder="password">
 						
 					</div>
                     <div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input type="text" [(ngModel)]="signupObj.password" placeholder="confirm your password">
+						<input type="text" class="form-control" [(ngModel)]="signupObj.password" placeholder="confirm your password">
 						
 					</div>
 					<div class="form-group">
-						<input type="submit" value="Sign Up" class="btn float-right login_btn">
+						<input (click)="onSignup()" type="submit" value="Sign Up" class="btn float-right login_btn">
 					</div>
 				</form>
 			</div>
