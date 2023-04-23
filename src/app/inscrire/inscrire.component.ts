@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { NgModel } from '@angular/forms';
+import { DbService } from 'src/app/services/db.service.service';
 
 @Component({
   selector: 'app-inscrire',
@@ -9,7 +8,7 @@ import { NgModel } from '@angular/forms';
 })
 export class InscrireComponent implements OnInit{
   signupUsers : any[]= [];
-  constructor(private router: Router){}
+  constructor(private dbService : DbService){}
   validation : boolean=true ;
   signupObj : any ={
     phoneNumber: 0,
@@ -30,11 +29,13 @@ onSignup(){
       alert('Passwords do not match!');
       return;
     }
-    this.router.navigate(['/login']);
-
+    this.dbService.signup(this.signupObj.phoneNumber,this.signupObj.username, this.signupObj.email, this.signupObj.password).subscribe((response) => {
+      console.log(response);
+    });
   }
   
   
 }
 
 }
+

@@ -7,7 +7,7 @@ header("Access-Control-Allow-Methods: PUT , GET , POST , DELETE");
 $servername = "localhost";
 $username = "root";/*etait root change*/
 $password = "";
-$dbname = "miniprojet";
+$dbname = "petmatchdb";
 $mysqli = new mysqli ($servername,$username,$password,$dbname,3307);
 if($mysqli -> connect_error)
 die('Error : ('.$mysqli -> connect_errno.')'.$mysqli -> connect_error);
