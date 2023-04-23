@@ -7,44 +7,23 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
- signupUsers: any[]=[]; 
- signupObj: any ={
-  phoneNumber:'',
-  userName:'',
-  email:'',
-  password:'',
-  verifPassword:''
- }
- LoginObj: any ={
-  userName:'',
-  password:''
- }
+ 
+  userName: string ='';
+  password: string = '';
+ 
 constructor(private router:Router){
 
 }
 ngOnInit(): void {
-  const localData = localStorage.getItem('signUpUsers');
-  if (localData != null){
-    this.signupUsers = JSON.parse(localData);
+
+}
+onSignup() {
+  // perform authentication logic here
+  if (this.userName === 'taha' && this.password === 'taha') {
+    this.router.navigate(['/admin']);
   }
-}
-onSignup(){
-  this.signupUsers.push(this.signupObj);
-  localStorage.setItem('signUpUsers',JSON.stringify(this.signupUsers));
-  this.signupObj = {
-    phoneNumber:'',
-    userName:'',
-    email:'',
-    password:'',
-    verifPassword:''
-  };
-}
-onLogin(){
-  const isUserExist = this.signupUsers.find(m => m.userName == this.LoginObj.userName && m.password == this.LoginObj.password );
-  if (isUserExist != undefined) {
-    alert('User Logged In Successfully');
-  } else {
-    alert('Wrong Credentials Or User Doesn\'t exist');
+  if (this.userName === 'maram' && this.password === 'maram') {
+    this.router.navigate(['/admin']);
   }
 }
 

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-inscrire',
@@ -7,13 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InscrireComponent implements OnInit{
   signupUsers : any[]= [];
-  constructor(){}
+  constructor(private router: Router){}
+  validation : boolean=true ;
   signupObj : any ={
-    phoneNumber:'',
+    phoneNumber: 0,
     userName:'',
     email:'',
     password:'',
-    verifPassword:''
+    confirmPassword:''
 
   };
 
@@ -22,8 +25,15 @@ ngOnInit(): void {
   
 }
 onSignup(){
-  this.signupUsers.push(this.signupObj);
-  localStorage.setItem('signUpUsers',JSON.stringify(this.signupUsers));
+  if ( this.validation === true) {
+    if ( this.signupObj.password !== this.signupObj.confirmPassword) {
+      alert('Passwords do not match!');
+      return;
+    }
+    this.router.navigate(['/login']);
+
+  }
+  
   
 }
 
