@@ -4,11 +4,11 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class DatabaseService {
+export class Connect {
 
   constructor(private http: HttpClient) {}
 
   connect() {
-    return this.http.get('http://localhost/myproject/db.php');
+    return this.http.get('http://localhost/myproject/bd connect.php');
   }
 }

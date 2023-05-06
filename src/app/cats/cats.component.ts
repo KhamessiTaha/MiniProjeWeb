@@ -7,8 +7,9 @@ import { Component } from '@angular/core';
 })
 export class CatsComponent {
 cats= {
-  
 
-}
+
+  
+  }
 
 }

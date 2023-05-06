@@ -31,12 +31,12 @@
 				</div>
 			</div>
 			<div class="card-body">
-				<form #loginForm="ngForm" (ngSubmit)="onSignup()" >
+				<form (ngSubmit)="onLogin()" >
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" name="username" class="form-control" placeholder="username" [(ngModel)]="userName" required>
+						<input type="text" name="username" class="form-control" placeholder="username" [(ngModel)]="username" required>
 						
 					</div>
 					<div class="input-group form-group">
@@ -52,6 +52,7 @@
 						<input  type="submit" value="Login" class="btn float-right login_btn">
 					</div>
 				</form>
+				<p *ngIf="error">{{ error }}</p>
 			</div>
 			<div class="card-footer">
 				<div class="d-flex justify-content-center links">

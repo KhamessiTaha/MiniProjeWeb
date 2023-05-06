@@ -10,14 +10,14 @@ export class InscrireComponent implements OnInit{
   signupUsers : any[]= [];
   constructor(private dbService : DbService){}
   validation : boolean=true ;
-  signupObj : any ={
-    phoneNumber: 0,
-    userName:'',
-    email:'',
-    password:'',
-    confirmPassword:''
+  
+    phone_num: string ='';
+    username:string='';
+    email_adress:string='';
+    password:string='';
+    confirmPassword:string='';
 
-  };
+    
 
 
 ngOnInit(): void {
@@ -25,12 +25,13 @@ ngOnInit(): void {
 }
 onSignup(){
   if ( this.validation === true) {
-    if ( this.signupObj.password !== this.signupObj.confirmPassword) {
+    if ( this.password !== this.confirmPassword) {
       alert('Passwords do not match!');
       return;
     }
-    this.dbService.signup(this.signupObj.phoneNumber,this.signupObj.username, this.signupObj.email, this.signupObj.password).subscribe((response) => {
+    this.dbService.signup(this.phone_num,this.username, this.email_adress, this.password).subscribe((response) => {
       console.log(response);
+    
     });
   }
   

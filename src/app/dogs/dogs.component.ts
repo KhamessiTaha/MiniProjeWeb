@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class DogsComponent {
   url1 = '/src/assets/img/Labrador Retriever.png';
   url2 = '/src/assets/img/Berger Allemand au Regard Tendre.jpg';
-
+  
 }

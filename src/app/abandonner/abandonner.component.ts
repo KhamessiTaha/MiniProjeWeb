@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./abandonner.component.css']
 })
 export class AbandonnerComponent {
+  
 
 }
